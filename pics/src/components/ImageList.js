@@ -1,11 +1,11 @@
 import React from 'react';
 import './ImageList.css';
-import ImageCare from './ImageCard';
+import ImageCard from './ImageCard';
 
 const ImageList = (props) =>{
     const images = props.images.map((image) => {
         return (
-            <ImageCare key = {image.id} image = {image}/>
+            <ImageCard key = {image.id} image = {image}/>
     );
     });
     return (
