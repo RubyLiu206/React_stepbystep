@@ -15,11 +15,6 @@ class SearchBar extends React.Component{
     render(){
         return (
             <div class="ui vertical menu">
-                <a class="teal item">
-                    Date
-                    <div class="ui teal left pointing label">2</div>
-                </a>
-                
                 <div class="item">
                     <form onSubmit = {this.onFormSubmit} class="ui form">
                         <input 

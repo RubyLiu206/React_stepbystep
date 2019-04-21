@@ -1,8 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import selectDate from '../actions/index';
+import selectDate from '../actions/selectDate';
 
 class DateList extends React.Component {
+  
     renderList() {
         return this.props.dates.map((date) =>{
             return(
@@ -23,7 +24,6 @@ class DateList extends React.Component {
         });
     };
     render(){
-        console.log(this.props);
         return <div className = 'ui divided list'>{this.renderList()}</div>
     }
 }
